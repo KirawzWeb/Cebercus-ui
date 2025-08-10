@@ -25,7 +25,7 @@ end
 
 if not getgenv().CerberusImportPath then
 	getgenv().CerberusImportPath = DEV_MODE and "http://127.0.0.1:5746/UI/"
-    or "https://raw.githubusercontent.com/IceMinisterq/Cerberus-UI-Library/refs/heads/main/"
+    or "https://raw.githubusercontent.com/KirawzWeb/Cebercus-ui/refs/heads/main/"
 end
 
 local Section = IS_STUDIO and require(script.Section) or
@@ -292,5 +292,6 @@ function Library:Destroy()
 		con:Disconnect()
 	end
 end
+
 
 return Library
